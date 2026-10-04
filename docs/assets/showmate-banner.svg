@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0F"/>
+      <stop offset="50%" stop-color="#12121A"/>
+      <stop offset="100%" stop-color="#0A0A0F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7F52FF"/>
+      <stop offset="50%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#7F52FF"/>
+    </linearGradient>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)" rx="12"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03" stroke="#7F52FF" stroke-width="0.5">
+    <line x1="0" y1="50" x2="1200" y2="50"/><line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="100" y1="0" x2="100" y2="300"/><line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/><line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="500" y1="0" x2="500" y2="300"/><line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="700" y1="0" x2="700" y2="300"/><line x1="800" y1="0" x2="800" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/><line x1="1000" y1="0" x2="1000" y2="300"/>
+    <line x1="1100" y1="0" x2="1100" y2="300"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="150" r="120" fill="#7F52FF" opacity="0.04"/>
+  <circle cx="1100" cy="150" r="120" fill="#00F0FF" opacity="0.04"/>
+  <circle cx="600" cy="150" r="200" fill="#3C0091" opacity="0.03"/>
+
+  <!-- Star icon -->
+  <g transform="translate(440, 80)" filter="url(#bigGlow)">
+    <path d="M50 10 L62 35 L90 40 L70 58 L75 85 L50 73 L25 85 L30 58 L10 40 L38 35 Z"
+          fill="none" stroke="url(#starGrad)" stroke-width="3.5"
+          stroke-linejoin="round" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- Title -->
+  <text x="520" y="145" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="56" font-weight="800" fill="white" letter-spacing="4"
+        text-anchor="start">SHOWMATE</text>
+
+  <!-- Accent line -->
+  <rect x="520" y="165" width="280" height="3" rx="1.5" fill="url(#accent)" filter="url(#glow)"/>
+
+  <!-- Subtitle -->
+  <text x="520" y="195" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="16" fill="#8888AA" font-weight="400" letter-spacing="2">
+    PREMIUM OFFLINE-FIRST CINEMA &amp; TV SERIES APP
+  </text>
+
+  <!-- Tech tags -->
+  <g transform="translate(520, 220)">
+    <rect x="0" y="0" width="55" height="24" rx="4" fill="#7F52FF" opacity="0.2"/>
+    <text x="27.5" y="16" font-family="monospace" font-size="10" fill="#7F52FF" text-anchor="middle" font-weight="600">KMP</text>
+
+    <rect x="65" y="0" width="90" height="24" rx="4" fill="#4285F4" opacity="0.2"/>
+    <text x="110" y="16" font-family="monospace" font-size="10" fill="#4285F4" text-anchor="middle" font-weight="600">COMPOSE</text>
+
+    <rect x="165" y="0" width="110" height="24" rx="4" fill="#00E676" opacity="0.2"/>
+    <text x="220" y="16" font-family="monospace" font-size="10" fill="#00E676" text-anchor="middle" font-weight="600">586 TESTS</text>
+
+    <rect x="285" y="0" width="105" height="24" rx="4" fill="#FFA726" opacity="0.2"/>
+    <text x="337.5" y="16" font-family="monospace" font-size="10" fill="#FFA726" text-anchor="middle" font-weight="600">OFFLINE-FIRST</text>
+
+    <rect x="400" y="0" width="80" height="24" rx="4" fill="#FF0055" opacity="0.2"/>
+    <text x="440" y="16" font-family="monospace" font-size="10" fill="#FF0055" text-anchor="middle" font-weight="600">ON-DEVICE AI</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="296" width="1200" height="4" fill="url(#accent)" opacity="0.6"/>
+</svg>
