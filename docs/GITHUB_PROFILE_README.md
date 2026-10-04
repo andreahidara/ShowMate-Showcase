@@ -17,10 +17,11 @@
 ### 🚀 What I Do
 
 - 📱 **Android Development** with **Kotlin** and **Jetpack Compose**
-- 🌍 **Kotlin Multiplatform (KMP)** for shared business logic
-- 🏗️ **Clean Architecture** + **MVVM** patterns
+- 🍎 **iOS Development** with **Swift** and **SwiftUI**
+- 🌍 **Kotlin Multiplatform (KMP)** for cross-platform shared business logic
+- 🏗️ **Clean Architecture** + **MVVM** (Unidirectional Data Flow)
 - 🔒 **Security-first** design (SQLCipher, Keystore, Biometric Auth)
-- 🧪 **Test-driven development** with 500+ automated tests per project
+- 🧪 **Testing Strategies**: TDD, MockK, Compose Testing, and Maestro for E2E
 
 ### 🎬 Featured Project
 

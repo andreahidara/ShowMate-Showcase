@@ -31,7 +31,10 @@ Room with SQLCipher serves as the SSOT. Network responses update the local datab
 #### 4. Koin for Dependency Injection
 Chosen over Hilt/Dagger for its simplicity and native KMP support. Module declarations are explicit and grouped by feature.
 
-#### 5. Coil with Aggressive Caching
+#### 5. MVVM & Unidirectional Data Flow (UDF)
+ViewModels absorb intents/actions from the UI layer and expose UI states strictly through reactive streams (`StateFlow`). This ensures a unidirectional data flow where the UI is a pure function of the state.
+
+#### 6. Coil with Aggressive Caching
 Image loading configured with 25% memory cache and 100MB disk cache to minimize network requests in an image-heavy app.
 
 ## Diagrams

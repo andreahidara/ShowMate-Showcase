@@ -6,9 +6,9 @@
 [![Tests](https://img.shields.io/badge/Tests-586%20Passed-00E676?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/andreahidara/ShowMate/actions)
 [![License](https://img.shields.io/badge/License-Proprietary-FF0055?style=for-the-badge)](https://showmate.app)
 
-**ShowMate** es una aplicación móvil de producción en la **Google Play Store**, construida bajo principios de **Kotlin Multiplatform (KMP)**, **Clean Architecture** y **MVVM**.
+**ShowMate** es una aplicación móvil nativa de producción disponible en **Google Play Store**. Está diseñada rigurosamente siguiendo los principios de **Clean Architecture**, el patrón **MVVM con Unidirectional Data Flow (UDF)**, y comparte su capa de dominio y reglas de negocio utilizando **Kotlin Multiplatform (KMP)**.
 
-Combina un motor de recomendaciones por **IA On-Device**, sincronización **Offline-First**, cifrado de grado bancario (**SQLCipher + KeyStore**), **18 minijuegos y experiencias arcade**, agentes de chat IA, mapas de cines cercanos y funciones sociales de comunidad en tiempo real.
+La aplicación destaca por integrar un motor de recomendaciones basado en **IA On-Device**, una arquitectura **Offline-First** que garantiza disponibilidad sin conexión, y seguridad de grado bancario (**SQLCipher + Keystore**). Además, ofrece una experiencia inmersiva mediante **18 minijuegos interactivos**, un agente de chat IA integrado, geolocalización de cines, y funcionalidades sociales avanzadas para la comunidad.
 
 ---
 
