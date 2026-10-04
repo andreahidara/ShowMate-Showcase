@@ -172,7 +172,7 @@ sequenceDiagram
 | **Asincronía** | Kotlin Coroutines & StateFlow |
 | **Cloud Services** | Firebase (Auth, Firestore, App Check con Play Integrity, Messaging) |
 | **Monetización** | RevenueCat SDK (Suscripciones In-App) |
-| **Testing & CI/CD** | JUnit4, MockK, Robolectric, Roborazzi Screenshot Testing, Kover, GitHub Actions |
+| **Testing & CI/CD** | JUnit4, JUnit5, MockK, Compose Testing, Robolectric, Roborazzi Screenshot Testing, Maestro (E2E), Kover, GitHub Actions |
 
 ---
 
@@ -184,6 +184,7 @@ ShowMate cuenta con una suite de pruebas automatizadas que se ejecuta en cada *c
 - 🟢 **Pruebas de Repositorios KMP**: 85 tests en `:shared`
 - ⚡ **Benchmark de Rendimiento**: Evaluación de puntuación de 1,000 candidatas en **< 50 ms**.
 - 📸 **Screenshot Testing Visual**: Capturas automáticas con **Roborazzi** y **Robolectric** para componentes UI (`AuthComponents`, `ShowCard`, `UiStateHandler`).
+- 🤖 **End-to-End (E2E) UI Testing**: Automatización de flujos de usuario reales en dispositivos usando **Maestro**.
 
 ```powershell
 # Ejecutar la suite completa de pruebas

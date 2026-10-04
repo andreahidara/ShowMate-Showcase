@@ -8,6 +8,7 @@ ShowMate follows the **Testing Pyramid** approach:
 - Heavy investment in **unit tests** (fast, isolated, covering business logic)
 - Moderate **integration tests** (repository layer, database interactions)
 - Targeted **screenshot tests** (visual regression for key UI components)
+- **End-to-End (E2E) UI flows** validated with **Maestro**
 - Minimal **benchmark tests** (critical performance paths)
 
 ## Test Distribution
@@ -27,11 +28,13 @@ Total: 586 Tests — 100% Pass Rate
 
 | Tool | Purpose |
 |:--|:--|
-| **JUnit4** | Test runner for all unit tests |
+| **JUnit4 & JUnit5** | Test runner for all unit tests |
 | **MockK** | Mocking framework for Kotlin (replaces Mockito) |
 | **Turbine** | Testing Kotlin Flows and StateFlow emissions |
+| **Compose Test** | Compose testing libraries for UI component validation |
 | **Robolectric** | Running Android tests on JVM without emulator |
 | **Roborazzi** | Screenshot testing with pixel-perfect comparison |
+| **Maestro** | End-to-end (E2E) automated UI flow validation |
 | **Macrobenchmark** | Cold startup and frame timing benchmarks |
 | **Kover** | Kotlin-native code coverage reporting |
 
