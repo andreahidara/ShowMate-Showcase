@@ -24,6 +24,31 @@ Combina un motor de recomendaciones por **IA On-Device**, sincronización **Offl
 
 ---
 
+## 🎨 Sistema de Diseño UI & Experiencia de Usuario (UI / UX)
+
+ShowMate implementa un sistema de diseño propio (*ShowMate Design System*) basado en **Material 3** y adaptado para una experiencia cinematográfica inmersiva:
+
+### 🌌 Paleta de Colores "Cinematic Dark"
+```
+█ #0A0A0F  Fondo Principal (Background Dark)
+█ #12121A  Superficie de Tarjetas (Surface Level 1)
+█ #1A1A26  Superficie Eleva (Surface Level 2)
+█ #7F52FF  Color Primario (Lavender Violet)
+█ #3C0091  Color Secundario (Deep Purple)
+█ #00F0FF  Acento Neón (Cyan Glow)
+```
+
+### 📱 Diseño Adaptativo (*Adaptive Layouts*)
+- **Layouts Flexibles**: Adaptación mediante `GridCells.Adaptive` e `WindowSizeClass` para smart-phones en vertical, horizontal y tablets de gran formato.
+- **Micro-interacciones y Animaciones**:
+  - Transiciones de elementos compartidos (*Shared Element Transitions*) entre las tarjetas del catálogo y la pantalla de detalles.
+  - Efectos de Sheen estilo cristal y respuesta háptica en botones de acción héroe (`AuthPrimaryButton`).
+  - Desenfoque dinámico (*Blur Radius Decay*) a contrarreloj en el minijuego *PixelPop*.
+- **Accesibilidad y Semántica**:
+  - Componentes etiquetados para lectores de pantalla (`TalkBack`) con semántica de roles y anuncios dinámicos de errores (`LiveRegionMode.Polite`).
+
+---
+
 ## 🌟 Características Principales
 
 - 🎬 **Motor de Recomendaciones por IA On-Device**: Algoritmo de afinidad bayesiana, atenuación temporal de géneros y modelo probabilístico de predicción de abandono (*Churn Predictor*).
@@ -209,4 +234,4 @@ private suspend fun requestCredential(context: Context, option: CredentialOption
 Desarrollado con ❤️ por **Andrea** — Android & Kotlin Multiplatform Engineer.
 
 - 📱 **App en Google Play**: [ShowMate en Play Store](https://play.google.com/store/apps/details?id=com.andrea.showmateapp)
-- 🌐 **Sitio Web**: [showmate.app](https://showmate.app)
+- 🌐 **Sitio Web Oficial**: [showmate-1317e.web.app](https://showmate-1317e.web.app) | [showmate.app](https://showmate.app)
